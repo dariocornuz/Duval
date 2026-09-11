@@ -13,7 +13,7 @@
   --bg:#eceff3;--panel:#ffffff;--panel-alt:#f6f8fa;--ink:#17242f;--muted:#5b6a79;
   --navy:#0d2b45;--navy-2:#123a5c;--blue:#1a5fa8;--line:#d5dde5;
   --ok:#1e8a4c;--warn:#c99400;--high:#d96c1e;--crit:#c22f3d;--amber:#b8860b;
-  --purple:#6c5aa8;--teal:#0e7c86;
+  --purple:#6c5aa8;--teal:#0e7c86;--brown:#8a5a2e;
   --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
   --sans:'IBM Plex Sans',system-ui,Segoe UI,Arial,sans-serif;
   --disp:'Barlow Condensed','IBM Plex Sans',sans-serif;
@@ -24,7 +24,7 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5}
 :focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px}
 .topbar{background:var(--navy);color:#fff;position:relative}
-.topbar::after{content:"";display:block;height:5px;background:linear-gradient(90deg,var(--ok) 0 12.5%,var(--blue) 12.5% 25%,var(--amber) 25% 37.5%,var(--purple) 37.5% 50%,var(--high) 50% 62.5%,var(--teal) 62.5% 75%,var(--crit) 75% 87.5%,var(--navy-2) 87.5% 100%)}
+.topbar::after{content:"";display:block;height:5px;background:linear-gradient(90deg,var(--ok) 0 11.1%,var(--blue) 11.1% 22.2%,var(--amber) 22.2% 33.3%,var(--purple) 33.3% 44.4%,var(--high) 44.4% 55.5%,var(--teal) 55.5% 66.6%,var(--crit) 66.6% 77.7%,var(--navy-2) 77.7% 88.8%,var(--brown) 88.8% 100%)}
 .topbar-inner{max-width:1180px;margin:0 auto;padding:32px 22px 30px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
 .brand-mark{width:56px;height:56px;flex:0 0 auto;border:2px solid rgba(255,255,255,.35);border-radius:10px;display:grid;place-items:center;text-decoration:none;transition:background .15s,border-color .15s}
 .brand-mark:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.6)}
@@ -67,7 +67,7 @@ footer{background:var(--navy);color:#bcd0e2;margin-top:20px}
 <section id="inicio">
   <div class="kicker">Inicio</div>
   <h2>Elige una herramienta</h2>
-  <p class="intro">Ocho herramientas, todas de referencia técnica — cada una indica su fundamento normativo y sus límites de uso. Haz clic en el rayo del encabezado en cualquier página para volver aquí.</p>
+  <p class="intro">Nueve herramientas, todas de referencia técnica — cada una indica su fundamento normativo y sus límites de uso. Haz clic en el rayo del encabezado en cualquier página para volver aquí.</p>
 
   <div class="grid-tools">
 
@@ -140,6 +140,15 @@ footer{background:var(--navy);color:#bcd0e2;margin-top:20px}
       </div>
       <h3>Termografía Guiada</h3>
       <p>Criterios de severidad por ΔT con corrección por carga, y casos ilustrativos de patrones de falla térmica.</p>
+      <span class="abrir">Abrir →</span>
+    </a>
+
+    <a class="tool-card" href="resistividad-suelo.html">
+      <div class="tool-icon" style="background:var(--brown)">
+        <svg viewBox="0 0 28 28" fill="none"><line x1="2" y1="9" x2="26" y2="9" stroke="#fff" stroke-width="1.6"/><line x1="2" y1="17" x2="26" y2="17" stroke="#fff" stroke-width="1.6" stroke-dasharray="2,2"/><line x1="14" y1="4" x2="14" y2="24" stroke="#fff" stroke-width="2"/><circle cx="14" cy="4" r="2.2" fill="#fff"/></svg>
+      </div>
+      <h3>Resistividad de Suelo</h3>
+      <p>Métodos Wenner, Schlumberger y caída de potencial con esquema de conexión, y comparación contra curvas patrón de dos capas.</p>
       <span class="abrir">Abrir →</span>
     </a>
 
